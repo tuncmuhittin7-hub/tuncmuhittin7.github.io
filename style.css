@@ -1,15 +1,43 @@
+/* Bütün sayfaya temel stiller veriyoruz */
 body {
-    background-color: #f0f8ff; /* Arka plan rengi: Açık mavi */
-    font-family: sans-serif;   /* Yazı tipi */
-    text-align: center;        /* Her şeyi ortala */
-    padding-top: 50px;         /* Yukarıdan biraz boşluk bırak */
+    background-color: #f0f2f5; /* Arka plan rengini biraz daha yumuşak bir gri yapalım */
+    font-family: Arial, sans-serif; /* Okunabilir bir yazı tipi seçelim */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-h1 {
-    color: #333; /* Başlık rengi: Koyu gri */
+/* Ana kart şablonumuzun stilleri */
+.kart-sablonu {
+    background-color: white; /* Kartın arka planı beyaz olsun */
+    width: 80%; /* Genişliği ekranın %80'i kadar olsun */
+    max-width: 600px; /* Ama en fazla 600px genişlesin */
+    border-radius: 15px; /* Kenarlarını yuvarlak yapalım */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif bir gölge efekti ekleyelim */
+    padding: 30px; /* İçeriden boşluk verelim */
+    text-align: center; /* İçindeki her şeyi ortalayalım */
 }
 
-p {
-    color: #555; /* Paragraf rengi: Orta gri */
-    font-size: 18px; /* Yazı boyutu */
+/* Profil resminin stilleri */
+.profil-resmi {
+    width: 150px; /* Resmin genişliği */
+    height: 150px; /* Resmin yüksekliği */
+    border-radius: 50%; /* Resmi tam bir daire yapalım */
+    border: 5px solid #fff; /* Etrafına beyaz bir çerçeve ekleyelim */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Resme de hafif bir gölge verelim */
+    margin-bottom: 20px; /* Resimle yazı arasına boşluk koyalım */
+}
+
+/* Başlık stilimiz */
+.icerik h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Paragraf stilimiz */
+.icerik p {
+    color: #666;
+    line-height: 1.6; /* Satır yüksekliğini artıralım, daha okunaklı olsun */
 }

@@ -1,43 +1,98 @@
 /* Bütün sayfaya temel stiller veriyoruz */
 body {
-    background-color: #f0f2f5; /* Arka plan rengini biraz daha yumuşak bir gri yapalım */
-    font-family: Arial, sans-serif; /* Okunabilir bir yazı tipi seçelim */
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    box-sizing: border-box;
 }
 
 /* Ana kart şablonumuzun stilleri */
 .kart-sablonu {
-    background-color: white; /* Kartın arka planı beyaz olsun */
-    width: 80%; /* Genişliği ekranın %80'i kadar olsun */
-    max-width: 600px; /* Ama en fazla 600px genişlesin */
-    border-radius: 15px; /* Kenarlarını yuvarlak yapalım */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Hafif bir gölge efekti ekleyelim */
-    padding: 30px; /* İçeriden boşluk verelim */
-    text-align: center; /* İçindeki her şeyi ortalayalım */
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 30px;
+    text-align: center;
 }
 
 /* Profil resminin stilleri */
 .profil-resmi {
-    width: 150px; /* Resmin genişliği */
-    height: 150px; /* Resmin yüksekliği */
-    border-radius: 50%; /* Resmi tam bir daire yapalım */
-    border: 5px solid #fff; /* Etrafına beyaz bir çerçeve ekleyelim */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Resme de hafif bir gölge verelim */
-    margin-bottom: 20px; /* Resimle yazı arasına boşluk koyalım */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
-/* Başlık stilimiz */
-.icerik h1 {
-    color: #333;
+/* Başlık ve Paragraf stilleri */
+.icerik h1 { color: #333; margin-bottom: 10px; }
+.icerik p { color: #666; line-height: 1.6; }
+
+/* --- YENİ EKLENEN STİLLER --- */
+
+/* Sosyal medya bölümü için boşluk */
+.sosyal-medya {
+    margin-top: 25px;
+}
+
+/* Instagram butonu stilimiz */
+.instagram-butonu {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    text-decoration: none; /* Link altı çizgisini kaldırır */
+    font-weight: bold;
+    font-size: 16px;
+    transition: transform 0.2s; /* Üzerine gelince büyüme efekti için */
+    display: inline-block; /* Butonun düzgün görünmesi için */
+}
+
+/* Butonun üzerine gelince hafifçe büyümesi için */
+.instagram-butonu:hover {
+    transform: scale(1.05);
+}
+
+/* İletişim bilgileri bölümü */
+.iletisim-bilgileri {
+    margin-top: 30px;
+    border-top: 1px solid #eee; /* Üstüne ince bir çizgi ekleyelim */
+    padding-top: 20px;
+    color: #555;
+    text-align: left; /* Yazıları sola yaslayalım */
+}
+
+/* İletişim başlığı */
+.iletisim-bilgileri h2 {
+    text-align: center; /* Başlığı ortalayalım */
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* İletişim bilgileri satırları */
+.iletisim-bilgileri p {
     margin-bottom: 10px;
 }
 
-/* Paragraf stilimiz */
-.icerik p {
-    color: #666;
-    line-height: 1.6; /* Satır yüksekliğini artıralım, daha okunaklı olsun */
+/* İletişim bilgileri linkleri (e-posta) */
+.iletisim-bilgileri a {
+    color: #dc2743; /* Instagram kırmızısı bir renk seçelim */
+    text-decoration: none;
+}
+
+.iletisim-bilgileri a:hover {
+    text-decoration: underline; /* Üzerine gelince altını çizelim */
+}
+
+/* İkonlar için stil */
+.iletisim-bilgileri .fas {
+    margin-right: 10px; /* İkon ile yazı arasına boşluk koyalım */
+    width: 20px; /* İkonların aynı hizada durması için */
 }

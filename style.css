@@ -1,7 +1,7 @@
 /* Bütün sayfaya temel stiller veriyoruz */
 body {
     background-color: #f0f2f5;
-    font-family: Arial, sans-serif;
+    font-family: Times New Roman, Angsana New;
     display: flex;
     justify-content: center;
     align-items: center;
